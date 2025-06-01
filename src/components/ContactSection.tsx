@@ -4,30 +4,30 @@ import Icon from "@/components/ui/icon";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Свяжитесь <span className="text-purple-600">с нами</span>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            Свяжитесь с нами
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-gray-600 max-w-2xl mx-auto">
             Готовы подарить дом четвероногому другу? Приезжайте к нам или
-            позвоните — мы поможем выбрать идеального питомца для вашей семьи.
+            позвоните.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-3 gap-6 mb-8">
           <Card className="text-center p-6">
             <CardHeader>
               <Icon
                 name="MapPin"
-                className="text-purple-600 mx-auto mb-4"
-                size={32}
+                className="text-blue-600 mx-auto mb-2"
+                size={24}
               />
-              <CardTitle>Наш адрес</CardTitle>
+              <CardTitle className="text-lg">Наш адрес</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-sm">
                 ул. Добрых Сердец, 15
                 <br />
                 Москва, 123456
@@ -41,13 +41,13 @@ const ContactSection = () => {
             <CardHeader>
               <Icon
                 name="Phone"
-                className="text-orange-500 mx-auto mb-4"
-                size={32}
+                className="text-blue-600 mx-auto mb-2"
+                size={24}
               />
-              <CardTitle>Телефоны</CardTitle>
+              <CardTitle className="text-lg">Телефоны</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-sm">
                 +7 (495) 123-45-67
                 <br />
                 +7 (925) 987-65-43
@@ -61,40 +61,34 @@ const ContactSection = () => {
             <CardHeader>
               <Icon
                 name="Mail"
-                className="text-purple-600 mx-auto mb-4"
-                size={32}
+                className="text-blue-600 mx-auto mb-2"
+                size={24}
               />
-              <CardTitle>Email</CardTitle>
+              <CardTitle className="text-lg">Email</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-sm">
                 info@lapkidobra.ru
                 <br />
                 adoption@lapkidobra.ru
-                <br />
-                volunteer@lapkidobra.ru
               </p>
             </CardContent>
           </Card>
         </div>
 
-        <div className="bg-gradient-to-r from-purple-600 to-orange-500 rounded-2xl p-8 text-white text-center">
-          <h3 className="text-2xl font-bold mb-4">Время посещений</h3>
-          <div className="grid md:grid-cols-2 gap-6 mb-6">
+        <div className="bg-blue-600 rounded-lg p-6 text-white text-center">
+          <h3 className="text-xl font-bold mb-4">Время посещений</h3>
+          <div className="grid md:grid-cols-2 gap-4 mb-4">
             <div>
-              <div className="font-semibold mb-2">Будние дни</div>
-              <div className="opacity-90">10:00 - 17:00</div>
+              <div className="font-medium mb-1">Будние дни</div>
+              <div>10:00 - 17:00</div>
             </div>
             <div>
-              <div className="font-semibold mb-2">Выходные</div>
-              <div className="opacity-90">9:00 - 18:00</div>
+              <div className="font-medium mb-1">Выходные</div>
+              <div>9:00 - 18:00</div>
             </div>
           </div>
-          <Button
-            size="lg"
-            className="bg-white text-purple-600 hover:bg-gray-100"
-          >
-            <Icon name="Calendar" size={20} />
+          <Button className="bg-white text-blue-600 hover:bg-gray-100">
             Записаться на встречу
           </Button>
         </div>

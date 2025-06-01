@@ -87,20 +87,17 @@ const DogGallery = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {dogs.map((dog) => (
-            <Card
-              key={dog.id}
-              className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105"
-            >
+            <Card key={dog.id} className="overflow-hidden">
               <div className="relative">
                 <img
                   src={dog.image}
                   alt={dog.name}
-                  className="w-full h-64 object-cover"
+                  className="w-full h-48 object-cover"
                 />
-                <div className="absolute top-4 right-4">
-                  <Badge variant="secondary" className="bg-white/90">
+                <div className="absolute top-2 right-2">
+                  <Badge variant="secondary" className="bg-white">
                     {dog.age}
                   </Badge>
                 </div>
@@ -109,13 +106,13 @@ const DogGallery = () => {
               <CardHeader>
                 <CardTitle className="flex items-center justify-between">
                   {dog.name}
-                  <Icon name="Heart" className="text-red-500" size={20} />
+                  <Icon name="Heart" className="text-red-500" size={18} />
                 </CardTitle>
-                <p className="text-sm text-gray-600 font-medium">{dog.breed}</p>
+                <p className="text-sm text-gray-600">{dog.breed}</p>
               </CardHeader>
 
               <CardContent>
-                <p className="text-gray-600 mb-4">{dog.description}</p>
+                <p className="text-gray-600 mb-4 text-sm">{dog.description}</p>
 
                 <div className="flex flex-wrap gap-2 mb-4">
                   {dog.personality.map((trait) => (
@@ -125,8 +122,7 @@ const DogGallery = () => {
                   ))}
                 </div>
 
-                <Button className="w-full bg-purple-600 hover:bg-purple-700">
-                  <Icon name="Heart" size={16} />
+                <Button className="w-full bg-blue-600 hover:bg-blue-700">
                   Познакомиться
                 </Button>
               </CardContent>

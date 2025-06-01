@@ -3,113 +3,103 @@ import Icon from "@/components/ui/icon";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-20 bg-gray-50">
+    <section id="about" className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              О приюте <span className="text-orange-500">"Лапки Добра"</span>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+              О приюте "Лапки Добра"
             </h2>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Наш приют основан в 2019 году с простой, но важной миссией — дать
-              каждой бездомной собаке шанс на счастливую жизнь. За 5 лет работы
-              мы помогли более чем 200 питомцам обрести любящие семьи.
+            <p className="text-gray-600 mb-8">
+              Наш приют основан в 2019 году. За 5 лет работы мы помогли более
+              чем 200 питомцам обрести любящие семьи.
             </p>
 
-            <div className="grid grid-cols-2 gap-6 mb-8">
-              <Card className="p-6 text-center">
+            <div className="grid grid-cols-2 gap-4 mb-8">
+              <Card className="p-4 text-center">
                 <CardContent className="p-0">
                   <Icon
                     name="Home"
-                    className="text-purple-600 mx-auto mb-4"
-                    size={32}
+                    className="text-blue-600 mx-auto mb-2"
+                    size={24}
                   />
-                  <div className="text-2xl font-bold text-gray-900 mb-2">
+                  <div className="text-xl font-bold text-gray-900 mb-1">
                     200+
                   </div>
-                  <div className="text-gray-600">Собак нашли дом</div>
+                  <div className="text-gray-600 text-sm">Собак нашли дом</div>
                 </CardContent>
               </Card>
 
-              <Card className="p-6 text-center">
+              <Card className="p-4 text-center">
                 <CardContent className="p-0">
                   <Icon
                     name="Users"
-                    className="text-orange-500 mx-auto mb-4"
-                    size={32}
+                    className="text-blue-600 mx-auto mb-2"
+                    size={24}
                   />
-                  <div className="text-2xl font-bold text-gray-900 mb-2">
-                    15
-                  </div>
-                  <div className="text-gray-600">Волонтеров</div>
+                  <div className="text-xl font-bold text-gray-900 mb-1">15</div>
+                  <div className="text-gray-600 text-sm">Волонтеров</div>
                 </CardContent>
               </Card>
             </div>
 
-            <div className="space-y-4">
-              <div className="flex items-start gap-4">
+            <div className="space-y-3">
+              <div className="flex items-start gap-3">
                 <Icon
                   name="CheckCircle"
                   className="text-green-500 mt-1"
-                  size={20}
+                  size={16}
                 />
                 <div>
-                  <div className="font-semibold text-gray-900">
+                  <div className="font-medium text-gray-900">
                     Полная ветеринарная помощь
                   </div>
-                  <div className="text-gray-600">
-                    Все собаки привиты, чипированы и стерилизованы
+                  <div className="text-gray-600 text-sm">
+                    Все собаки привиты и чипированы
                   </div>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-3">
                 <Icon
                   name="CheckCircle"
                   className="text-green-500 mt-1"
-                  size={20}
+                  size={16}
                 />
                 <div>
-                  <div className="font-semibold text-gray-900">
+                  <div className="font-medium text-gray-900">
                     Поддержка после усыновления
                   </div>
-                  <div className="text-gray-600">
-                    Консультации и помощь в адаптации питомца
+                  <div className="text-gray-600 text-sm">
+                    Консультации и помощь
                   </div>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-3">
                 <Icon
                   name="CheckCircle"
                   className="text-green-500 mt-1"
-                  size={20}
+                  size={16}
                 />
                 <div>
-                  <div className="font-semibold text-gray-900">
+                  <div className="font-medium text-gray-900">
                     Образовательные программы
                   </div>
-                  <div className="text-gray-600">
-                    Уроки ответственного обращения с животными
+                  <div className="text-gray-600 text-sm">
+                    Уроки ответственного обращения
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="relative">
+          <div>
             <img
-              src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=600&h=500&fit=crop"
+              src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=500&h=400&fit=crop"
               alt="Приют для собак"
-              className="rounded-2xl shadow-xl w-full h-[500px] object-cover"
+              className="rounded-lg w-full h-80 object-cover"
             />
-            <div className="absolute -top-6 -right-6 bg-orange-500 text-white p-6 rounded-xl shadow-lg">
-              <div className="text-center">
-                <Icon name="Award" className="mx-auto mb-2" size={32} />
-                <div className="font-bold">Лучший приют</div>
-                <div className="text-sm opacity-90">города 2023</div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
